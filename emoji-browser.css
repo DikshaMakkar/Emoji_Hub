@@ -29,13 +29,16 @@
 
 .welcome-text.top {
   top: 20px;
+  border: 1px solid black;
 }
 
 #search {
   position: fixed;
   right: 0;
   padding: 10px 8px 0px 0px;
-  height: 20%;
+  /* height: 20%; */
+  width: 40%;
+  border: 1px solid black;
 }
 
 #search-input,
@@ -44,9 +47,10 @@
   border: 1px solid #ccc;
   border-radius: 20px;
   font-size: 16px;
-  width: 250px;
+  width: 40%;
+  align-items: center;
   transition: border-color 0.3s ease;
-  margin-left: 10px;
+  margin-left: 5%;
 }
 
 .emoji-card {
@@ -143,14 +147,16 @@
 
 /* Responsive styles */
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .emoji-card {
     width: 100%;
   }
   #search {
-    width: 40%;
+    width: 60%;
+    font-size: 1rem;
   }
   .welcome-text {
-    left: 30%;
+    left: 15%;
+    font-size: 1.5rem;
   }
 }
