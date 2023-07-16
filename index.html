@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Emoji hub</title>
+    <style>
+      .welcome-text {
+        font-size: 48px; /* Large font size */
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="emoji-browser.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Dosis:wght@600&family=Inspiration&family=Merriweather&family=Nanum+Myeongjo&family=Patrick+Hand&family=Raleway:wght@100&family=Roboto:wght@100&family=Shippori+Antique+B1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="welcome-text">Emoji Hub</h1>
+    
+    <div id="search">
+      <input type="text" id="search-input" placeholder="Search emojis" />
+      <select id="category-select">
+        <option value="">All Categories</option>
+        <option value="smileys and people">Smileys and People</option>
+        <option value="animals and nature">Animals and Nature</option>
+        <option value="food and drink">Food and Drink</option>
+        <option value="travel and places">Travel and Places</option>
+        <option value="activities">Activities</option>
+        <option value="objects">Objects</option>
+        <option value="symbols">Symbols</option>
+        <option value="flags">Flags</option>
+      </select>
+    </div>
+    <div>
+    <div id="emoji-list">
+      <!-- Emoji cards will be dynamically added here -->
+    </div>
+    <div id="pagination-container" class="pagination-container">
+      <!-- Pagination buttons will be dynamically added here -->
+    </div>
+    <script>
+      // Animate and position welcome text
+      const welcomeText = document.getElementById("welcome-text");
+      welcomeText.addEventListener("animationend", () => {
+        welcomeText.classList.add("top");
+      });
+    </script>
+    <script src="emoji-browser.js"></script>
+  </body>
+</html>

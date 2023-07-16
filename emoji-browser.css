@@ -1,0 +1,156 @@
+@keyframes welcomeAnimation {
+  0% {
+    font-size: 48px; /* Initial large font size */
+  }
+  100% {
+    font-size: 26px; /* Final smaller font size */
+  }
+}
+:root {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.3rem;
+}
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: #efd827d4;
+}
+
+.welcome-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  text-align: center;
+  transition: top 1s;
+}
+
+.welcome-text.top {
+  top: 20px;
+}
+
+#search {
+  position: fixed;
+  right: 0;
+  padding: 10px 8px 0px 0px;
+  height: 20%;
+}
+
+#search-input,
+#category-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  width: 250px;
+  transition: border-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.emoji-card {
+  margin: 10px;
+  margin-top: 95px;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 15px;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.emoji-card:hover {
+  transform: scale(1.1); /* Increase the scale factor to your desired size */
+
+  background-color: #e4ce2517;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.emoji-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emoji-htmlCode {
+  font-size: 70px;
+}
+.emoji-card .emoji-category {
+  display: none;
+}
+
+.emoji-card:hover .emoji-category {
+  display: block;
+}
+.emoji-card .emoji-name {
+  display: none;
+}
+
+.emoji-card:hover .emoji-name {
+  display: block;
+}
+
+#emoji-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pagination-container button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-container button.active {
+  background-color: #f0f0f0;
+  border: 1px solid #e4ce25;
+
+  box-shadow: 0px 0px 17px 3px #e4ce25;
+  color: rgb(0, 0, 0);
+}
+
+.pagination-container button:hover {
+  background-color: #f0e7a4;
+  transform: translateX(-30%);
+  transition: background-color 0.3s ease;
+}
+
+.pagination .arrow {
+  margin: 0 5px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .emoji-card {
+    width: 100%;
+  }
+  #search {
+    width: 40%;
+  }
+  .welcome-text {
+    left: 30%;
+  }
+}
