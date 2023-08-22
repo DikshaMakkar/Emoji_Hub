@@ -30,7 +30,6 @@
 
 .welcome-text.top {
   top: 20px;
-  border: 1px solid black;
 }
 
 #search {
@@ -39,7 +38,6 @@
   padding: 10px 8px 0px 0px;
   /* height: 20%; */
   width: 40%;
-  border: 1px solid black;
 }
 
 #search-input,
